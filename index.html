@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor Game</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+</head>
+<body>
+    <div class="layout">
+        <div class="header-layout">
+            Rock Paper Scissors
+        </div>
+        <div class="buttons-layout">
+            <div class="r-button">
+                <img class="r-image" src="images/rock-emoji.png" alt="rock-emoji" onclick="
+                computerMove = pickMove();
+                playGame('Rock',computerMove);
+                ">
+                <div class="tooltip">Rock</div>
+            </div>
+            <div class="p-button">
+                <img class="p-image" src="images/paper-emoji.png" alt="image-emoji" onclick="
+                computerMove = pickMove();
+                playGame('Paper',computerMove);
+                " >
+                <div class="tooltip">Paper</div>
+            </div>
+            <div class="s-button">
+                <img class="s-image" src="images/scissors-emoji.png" alt="scissors-emoji" onclick="
+                computerMove = pickMove();
+                playGame('Scissor',computerMove);
+                ">
+                <div class="tooltip" >Scissor</div>
+            </div>
+        </div>
+        <div class="results-layout">
+            <p class="js-winner">Lets Play a Game</p>
+            <p class="js-announce">you will have three chances! </p>
+            <p class="js-score"> Joking &#128523;! you can play as much as you wish!</p>
+        
+        </div>
+        <div class="reset-layout">
+            <button class="reset-button" onclick="
+            reset();
+        ">Reset Score</button>
+        <button class="js-autoPlay auto-play" onclick="autoplay();">Auto Play</button>
+        </div>
+
+    </div>
+
+    <script src="myscript.js" ></script>
+</body>
+</html>
